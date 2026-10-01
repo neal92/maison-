@@ -82,6 +82,12 @@ export function ContactSection() {
             ))}
           </ul>
 
+          <div className="mt-6 rounded-lg bg-accent/10 p-4 border border-accent/30">
+            <p className="text-sm text-foreground">
+              <strong>Pour une meilleure réactivité,</strong> nous vous recommandons de nous contacter par <strong>mail</strong> ou <strong>téléphone</strong>.
+            </p>
+          </div>
+
           <p className="mt-6 flex items-start gap-2 text-sm text-muted-foreground">
             <MapPin className="mt-0.5 size-4 shrink-0" aria-hidden="true" />
             {site.contact.address}

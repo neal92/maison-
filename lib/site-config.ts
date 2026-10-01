@@ -6,9 +6,9 @@ export const site = {
   location: "Gordes, Luberon — Provence",
   description:
     "Une maison en pierre lumineuse, nichée au milieu des oliviers, avec piscine privée et vue sur les collines du Luberon. Idéale pour se retrouver en famille ou entre amis.",
-  capacity: 8,
-  bedrooms: 4,
-  bathrooms: 3,
+  capacity: 20,
+  bedrooms: 7,
+  bathrooms: 5,
   surface: "180 m²",
 
   contact: {
@@ -20,16 +20,36 @@ export const site = {
   },
 
   pricing: [
-    { season: "Basse saison", period: "Octobre – Avril", night: 180, week: 1100 },
-    { season: "Moyenne saison", period: "Mai, juin & septembre", night: 250, week: 1600 },
-    { season: "Haute saison", period: "Juillet – Août", night: 350, week: 2300, highlight: true },
+    {
+      season: "Basse saison",
+      period: "Octobre – Avril",
+      night: 180,
+      week: 1100,
+    },
+    {
+      season: "Moyenne saison",
+      period: "Mai, juin & septembre",
+      night: 250,
+      week: 1600,
+    },
+    {
+      season: "Haute saison",
+      period: "Juillet – Août",
+      night: 350,
+      week: 2300,
+      highlight: true,
+    },
+    {
+      season: "Formule Anniversaire",
+      period: "Traiteur, décoration & services sur devis",
+      special: true,
+    },
   ],
 
   practicalInfo: [
     { label: "Arrivée", value: "à partir de 16h" },
     { label: "Départ", value: "avant 10h" },
     { label: "Séjour minimum", value: "3 nuits (7 nuits en juillet-août)" },
-    { label: "Caution", value: "800 € (non encaissée)" },
     { label: "Ménage de fin de séjour", value: "Inclus" },
     { label: "Linge de lit & serviettes", value: "Fournis" },
     { label: "Animaux", value: "Acceptés sur demande" },
@@ -41,6 +61,9 @@ export const site = {
     { name: "Chambre 2", detail: "Lit double 160 cm, vue sur la piscine" },
     { name: "Chambre 3", detail: "Deux lits simples 90 cm" },
     { name: "Chambre 4", detail: "Lit double 140 cm, accès au jardin" },
+    { name: "Chambre 5", detail: "Lit double 160 cm, balcon" },
+    { name: "Chambre 6", detail: "Deux lits simples 90 cm, accès terrasse" },
+    { name: "Chambre 7", detail: "Lit double 140 cm, salle de bain privative" },
   ],
 
   amenities: [
@@ -59,12 +82,15 @@ export const site = {
   ],
 
   gallery: [
-    { src: "/images/hero.png", alt: "Vue extérieure de la villa en pierre avec sa piscine" },
-    { src: "/images/salon.png", alt: "Salon lumineux avec poutres apparentes" },
-    { src: "/images/piscine.png", alt: "Piscine avec transats et parasols" },
-    { src: "/images/chambre.png", alt: "Chambre avec lit en lin blanc" },
-    { src: "/images/cuisine.png", alt: "Cuisine équipée avec îlot central" },
-    { src: "/images/terrasse.png", alt: "Terrasse sous pergola au coucher du soleil" },
+    { src: "/images/entree.jpg", alt: "Entrée de la villa" },
+    { src: "/images/jardin.jpg", alt: "Jardin avec vue sur le paysage" },
+    {
+      src: "/images/pergola bio climatique.jpg",
+      alt: "Pergola avec pergola bio climatique",
+    },
+    { src: "/images/mur rideau vue étage.jpg", alt: "Vue depuis l'étage" },
+    { src: "/images/image cuisine.jpg", alt: "Cuisine équipée" },
+    { src: "/images/coursive étage.jpg", alt: "Couloir de l'étage" },
   ],
 
   reviews: [
@@ -90,6 +116,6 @@ export const site = {
       text: "Un vrai coin de paradis. Tout était impeccable, propre et décoré avec goût. Le propriétaire est disponible et de très bon conseil.",
     },
   ],
-} as const
+} as const;
 
-export type Site = typeof site
+export type Site = typeof site;

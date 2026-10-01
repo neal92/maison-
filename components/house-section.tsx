@@ -37,7 +37,7 @@ export function HouseSection() {
 
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
             <Image
-              src="/images/salon.png"
+              src="/images/jardin.jpg"
               alt="Salon de la villa"
               fill
               sizes="(min-width: 768px) 50vw, 100vw"

@@ -46,6 +46,8 @@ export function GallerySection() {
                   src={photo.src}
                   alt={photo.alt}
                   fill
+                  priority={i < 3}
+                  quality={85}
                   sizes={i === 0 ? "(min-width: 768px) 66vw, 100vw" : "(min-width: 768px) 33vw, 50vw"}
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
@@ -70,7 +72,7 @@ export function GallerySection() {
         {index !== null && (
           <div className="flex h-full w-full items-center justify-center p-4" onClick={(e) => e.target === e.currentTarget && setIndex(null)}>
             <div className="relative h-[80svh] w-full max-w-5xl">
-              <Image src={photos[index].src} alt={photos[index].alt} fill sizes="100vw" className="object-contain" />
+              <Image src={photos[index].src} alt={photos[index].alt} fill quality={95} sizes="100vw" className="object-contain" />
             </div>
             <p className="absolute bottom-6 left-1/2 -translate-x-1/2 text-sm text-white/80">
               {index + 1} / {photos.length}
