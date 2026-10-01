@@ -12,10 +12,10 @@ export const site = {
   surface: "180 m²",
 
   contact: {
-    phone: "+33 6 12 34 56 78",
+    phone: "+33 7 46 32 63 86",
     // Numéro WhatsApp au format international, sans espaces ni "+"
-    whatsapp: "33612345678",
-    email: "contact@villa-des-oliviers.fr",
+    whatsapp: "33746326386",
+    email: "contact-villa-des-oliviers.fr@proton.me",
     address: "Chemin des Oliviers, 84220 Gordes",
   },
 
